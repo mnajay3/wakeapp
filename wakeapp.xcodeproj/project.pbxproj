@@ -1,0 +1,965 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F4BA825625F8F9CDF3912AF /* Pods_wakeapp_wakeappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8408EF5849C049C2BB3471F /* Pods_wakeapp_wakeappUITests.framework */; };
+		958D47810694207A0B72ACAB /* Pods_wakeappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AD4F8152B4A4510C1C1616 /* Pods_wakeappTests.framework */; };
+		B2213FB123D02490003D0017 /* ChatLLogViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2213FB023D02490003D0017 /* ChatLLogViewModal.swift */; };
+		B2213FB323D0271D003D0017 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2213FB223D0271D003D0017 /* Message.swift */; };
+		B2213FB623D02A3E003D0017 /* ChatLogOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2213FB523D02A3E003D0017 /* ChatLogOperation.swift */; };
+		B2394416238058EA00F22535 /* LoginViewController+UIPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2394415238058EA00F22535 /* LoginViewController+UIPickerVC.swift */; };
+		B246037423AA6D52004885E1 /* UIImageView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B246037323AA6D52004885E1 /* UIImageView+extension.swift */; };
+		B246037623AD9B14004885E1 /* ChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B246037523AD9B14004885E1 /* ChatLogController.swift */; };
+		B25F047D234DA2C200B82076 /* AsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25F047C234DA2C200B82076 /* AsynchronousOperation.swift */; };
+		B25F047F234EFDF500B82076 /* PersistUserInfoOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25F047E234EFDF500B82076 /* PersistUserInfoOperation.swift */; };
+		B25F048123524E5700B82076 /* AdapterOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25F048023524E5600B82076 /* AdapterOperation.swift */; };
+		B25F04832354121500B82076 /* WakeAppException.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25F04822354121500B82076 /* WakeAppException.swift */; };
+		B25F04862356D04A00B82076 /* UserRegistrationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25F04852356D04A00B82076 /* UserRegistrationDelegate.swift */; };
+		B25F0488235AE60300B82076 /* MessagesViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25F0487235AE60300B82076 /* MessagesViewModal.swift */; };
+		B25F048A236013D700B82076 /* LoginUserOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25F0489236013D700B82076 /* LoginUserOperation.swift */; };
+		B25F048C236287F000B82076 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25F048B236287EF00B82076 /* TestVC.swift */; };
+		B262023D236BA6340042CDC1 /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B262023C236BA6340042CDC1 /* NewMessageViewController.swift */; };
+		B262023F236C66A60042CDC1 /* ContactsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B262023E236C66A60042CDC1 /* ContactsTableView.swift */; };
+		B2620242236C67120042CDC1 /* ContactsTableViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2620241236C67120042CDC1 /* ContactsTableViewModal.swift */; };
+		B2620245236C69A80042CDC1 /* ContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2620244236C69A80042CDC1 /* ContactsTableViewCell.swift */; };
+		B2E1E3562387AB59007DF696 /* ProfileImageStorageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1E3552387AB59007DF696 /* ProfileImageStorageOperation.swift */; };
+		B2E1E3582387AF91007DF696 /* UserInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1E3572387AF91007DF696 /* UserInput.swift */; };
+		B2E8F9832345BD4900876266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8F9822345BD4900876266 /* AppDelegate.swift */; };
+		B2E8F9852345BD4900876266 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8F9842345BD4900876266 /* SceneDelegate.swift */; };
+		B2E8F9872345BD4900876266 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8F9862345BD4900876266 /* MessagesViewController.swift */; };
+		B2E8F98C2345BD4B00876266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2E8F98B2345BD4B00876266 /* Assets.xcassets */; };
+		B2E8F98F2345BD4B00876266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E8F98D2345BD4B00876266 /* LaunchScreen.storyboard */; };
+		B2E8F99A2345BD4B00876266 /* wakeappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8F9992345BD4B00876266 /* wakeappTests.swift */; };
+		B2E8F9A52345BD4C00876266 /* wakeappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8F9A42345BD4C00876266 /* wakeappUITests.swift */; };
+		B2E8F9B62345C43900876266 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8F9B52345C43900876266 /* LoginViewController.swift */; };
+		B2E8F9B82345C95400876266 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E8F9B72345C95400876266 /* main.storyboard */; };
+		B2E8F9BB2347046700876266 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8F9BA2347046700876266 /* UIColor+extension.swift */; };
+		B2E8F9C12348618800876266 /* LoginVCViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8F9C02348618800876266 /* LoginVCViewModal.swift */; };
+		B2E8F9C3234863C900876266 /* UIAlertController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8F9C2234863C900876266 /* UIAlertController+extension.swift */; };
+		B2E8F9C52348799100876266 /* Notification.Name+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8F9C42348799100876266 /* Notification.Name+extension.swift */; };
+		B2E8F9C72348F41000876266 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B2E8F9C62348F41000876266 /* GoogleService-Info.plist */; };
+		B2E8FA09234A954A00876266 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8FA08234A954A00876266 /* User.swift */; };
+		B2E8FA0C234AA7AF00876266 /* UserRegistrationOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8FA0B234AA7AF00876266 /* UserRegistrationOperation.swift */; };
+		FCDDC00B3BA324F6F0EDAD1F /* Pods_wakeapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3ED0F51A10C0CBAACE10B06 /* Pods_wakeapp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B2E8F9962345BD4B00876266 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2E8F9772345BD4800876266 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2E8F97E2345BD4800876266;
+			remoteInfo = wakeapp;
+		};
+		B2E8F9A12345BD4C00876266 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2E8F9772345BD4800876266 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2E8F97E2345BD4800876266;
+			remoteInfo = wakeapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03B0CF7EF18B6DABD7DE886B /* Pods-wakeapp-wakeappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wakeapp-wakeappUITests.debug.xcconfig"; path = "Target Support Files/Pods-wakeapp-wakeappUITests/Pods-wakeapp-wakeappUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2620144388DAA6C99AB6C07F /* Pods-wakeapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wakeapp.release.xcconfig"; path = "Target Support Files/Pods-wakeapp/Pods-wakeapp.release.xcconfig"; sourceTree = "<group>"; };
+		732499E3F41703C437291B8A /* Pods-wakeapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wakeapp.debug.xcconfig"; path = "Target Support Files/Pods-wakeapp/Pods-wakeapp.debug.xcconfig"; sourceTree = "<group>"; };
+		9AF45E018567086C3CDCC54D /* Pods-wakeapp-wakeappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wakeapp-wakeappUITests.release.xcconfig"; path = "Target Support Files/Pods-wakeapp-wakeappUITests/Pods-wakeapp-wakeappUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A8408EF5849C049C2BB3471F /* Pods_wakeapp_wakeappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wakeapp_wakeappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2213FB023D02490003D0017 /* ChatLLogViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLLogViewModal.swift; sourceTree = "<group>"; };
+		B2213FB223D0271D003D0017 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		B2213FB523D02A3E003D0017 /* ChatLogOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogOperation.swift; sourceTree = "<group>"; };
+		B2394415238058EA00F22535 /* LoginViewController+UIPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+UIPickerVC.swift"; sourceTree = "<group>"; };
+		B246037323AA6D52004885E1 /* UIImageView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+extension.swift"; sourceTree = "<group>"; };
+		B246037523AD9B14004885E1 /* ChatLogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogController.swift; sourceTree = "<group>"; };
+		B25F047C234DA2C200B82076 /* AsynchronousOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousOperation.swift; sourceTree = "<group>"; };
+		B25F047E234EFDF500B82076 /* PersistUserInfoOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistUserInfoOperation.swift; sourceTree = "<group>"; };
+		B25F048023524E5600B82076 /* AdapterOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterOperation.swift; sourceTree = "<group>"; };
+		B25F04822354121500B82076 /* WakeAppException.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeAppException.swift; sourceTree = "<group>"; };
+		B25F04852356D04A00B82076 /* UserRegistrationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationDelegate.swift; sourceTree = "<group>"; };
+		B25F0487235AE60300B82076 /* MessagesViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewModal.swift; sourceTree = "<group>"; };
+		B25F0489236013D700B82076 /* LoginUserOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserOperation.swift; sourceTree = "<group>"; };
+		B25F048B236287EF00B82076 /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
+		B262023C236BA6340042CDC1 /* NewMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewController.swift; sourceTree = "<group>"; };
+		B262023E236C66A60042CDC1 /* ContactsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableView.swift; sourceTree = "<group>"; };
+		B2620241236C67120042CDC1 /* ContactsTableViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewModal.swift; sourceTree = "<group>"; };
+		B2620244236C69A80042CDC1 /* ContactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell.swift; sourceTree = "<group>"; };
+		B2E1E3552387AB59007DF696 /* ProfileImageStorageOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageStorageOperation.swift; sourceTree = "<group>"; };
+		B2E1E3572387AF91007DF696 /* UserInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInput.swift; sourceTree = "<group>"; };
+		B2E8F97F2345BD4800876266 /* wakeapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wakeapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2E8F9822345BD4900876266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B2E8F9842345BD4900876266 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B2E8F9862345BD4900876266 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		B2E8F98B2345BD4B00876266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2E8F98E2345BD4B00876266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B2E8F9902345BD4B00876266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2E8F9952345BD4B00876266 /* wakeappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wakeappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2E8F9992345BD4B00876266 /* wakeappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wakeappTests.swift; sourceTree = "<group>"; };
+		B2E8F99B2345BD4B00876266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2E8F9A02345BD4C00876266 /* wakeappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wakeappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2E8F9A42345BD4C00876266 /* wakeappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wakeappUITests.swift; sourceTree = "<group>"; };
+		B2E8F9A62345BD4C00876266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2E8F9B52345C43900876266 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B2E8F9B72345C95400876266 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		B2E8F9BA2347046700876266 /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
+		B2E8F9C02348618800876266 /* LoginVCViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVCViewModal.swift; sourceTree = "<group>"; };
+		B2E8F9C2234863C900876266 /* UIAlertController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+extension.swift"; sourceTree = "<group>"; };
+		B2E8F9C42348799100876266 /* Notification.Name+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification.Name+extension.swift"; sourceTree = "<group>"; };
+		B2E8F9C62348F41000876266 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B2E8FA08234A954A00876266 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B2E8FA0B234AA7AF00876266 /* UserRegistrationOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationOperation.swift; sourceTree = "<group>"; };
+		C3ED0F51A10C0CBAACE10B06 /* Pods_wakeapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wakeapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8091607BBDAFCFF0A08651 /* Pods-wakeappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wakeappTests.debug.xcconfig"; path = "Target Support Files/Pods-wakeappTests/Pods-wakeappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2AD4F8152B4A4510C1C1616 /* Pods_wakeappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wakeappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2D33F4B27204FDDE47F0007 /* Pods-wakeappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wakeappTests.release.xcconfig"; path = "Target Support Files/Pods-wakeappTests/Pods-wakeappTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2E8F97C2345BD4800876266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCDDC00B3BA324F6F0EDAD1F /* Pods_wakeapp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2E8F9922345BD4B00876266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				958D47810694207A0B72ACAB /* Pods_wakeappTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2E8F99D2345BD4C00876266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F4BA825625F8F9CDF3912AF /* Pods_wakeapp_wakeappUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9EBE30DA42362AFE177B7D5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3ED0F51A10C0CBAACE10B06 /* Pods_wakeapp.framework */,
+				A8408EF5849C049C2BB3471F /* Pods_wakeapp_wakeappUITests.framework */,
+				D2AD4F8152B4A4510C1C1616 /* Pods_wakeappTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2213FB423D02A0E003D0017 /* message */ = {
+			isa = PBXGroup;
+			children = (
+				B2213FB523D02A3E003D0017 /* ChatLogOperation.swift */,
+			);
+			path = message;
+			sourceTree = "<group>";
+		};
+		B25F04842356CFD200B82076 /* delegates */ = {
+			isa = PBXGroup;
+			children = (
+				B25F04852356D04A00B82076 /* UserRegistrationDelegate.swift */,
+			);
+			path = delegates;
+			sourceTree = "<group>";
+		};
+		B2620240236C66AC0042CDC1 /* tableview */ = {
+			isa = PBXGroup;
+			children = (
+				B262023E236C66A60042CDC1 /* ContactsTableView.swift */,
+			);
+			path = tableview;
+			sourceTree = "<group>";
+		};
+		B2620243236C69920042CDC1 /* tableviewcell */ = {
+			isa = PBXGroup;
+			children = (
+				B2620244236C69A80042CDC1 /* ContactsTableViewCell.swift */,
+			);
+			path = tableviewcell;
+			sourceTree = "<group>";
+		};
+		B2E1E3592388B97F007DF696 /* multiThreading */ = {
+			isa = PBXGroup;
+			children = (
+				B25F047C234DA2C200B82076 /* AsynchronousOperation.swift */,
+			);
+			path = multiThreading;
+			sourceTree = "<group>";
+		};
+		B2E1E35A2388B9C2007DF696 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				B25F048023524E5600B82076 /* AdapterOperation.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		B2E1E35B2388B9DD007DF696 /* registration */ = {
+			isa = PBXGroup;
+			children = (
+				B2E8FA0B234AA7AF00876266 /* UserRegistrationOperation.swift */,
+				B25F047E234EFDF500B82076 /* PersistUserInfoOperation.swift */,
+				B2E1E3552387AB59007DF696 /* ProfileImageStorageOperation.swift */,
+			);
+			path = registration;
+			sourceTree = "<group>";
+		};
+		B2E1E35C2388BA0E007DF696 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				B25F0489236013D700B82076 /* LoginUserOperation.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		B2E1E35D2388BA81007DF696 /* exception */ = {
+			isa = PBXGroup;
+			children = (
+				B25F04822354121500B82076 /* WakeAppException.swift */,
+			);
+			path = exception;
+			sourceTree = "<group>";
+		};
+		B2E8F9762345BD4800876266 = {
+			isa = PBXGroup;
+			children = (
+				B2E8F9812345BD4800876266 /* wakeapp */,
+				B2E8F9982345BD4B00876266 /* wakeappTests */,
+				B2E8F9A32345BD4C00876266 /* wakeappUITests */,
+				B2E8F9802345BD4800876266 /* Products */,
+				F3F52DC11B5D61240F5D20B2 /* Pods */,
+				9EBE30DA42362AFE177B7D5A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B2E8F9802345BD4800876266 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2E8F97F2345BD4800876266 /* wakeapp.app */,
+				B2E8F9952345BD4B00876266 /* wakeappTests.xctest */,
+				B2E8F9A02345BD4C00876266 /* wakeappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2E8F9812345BD4800876266 /* wakeapp */ = {
+			isa = PBXGroup;
+			children = (
+				B2E1E35D2388BA81007DF696 /* exception */,
+				B25F04842356CFD200B82076 /* delegates */,
+				B2E8FA0A234AA73600876266 /* operations */,
+				B2E8F9B92347044100876266 /* extensions */,
+				B2E8F9B42345C41D00876266 /* ####### VIEW ####### */,
+				B2E8F9B32345C41500876266 /* ####### MODAL ##### */,
+				B2E8F9B22345C3F300876266 /* ####### VIEWMODAL # */,
+				B2E8F9822345BD4900876266 /* AppDelegate.swift */,
+				B2E8F9B72345C95400876266 /* main.storyboard */,
+				B2E8F9842345BD4900876266 /* SceneDelegate.swift */,
+				B2E8F98B2345BD4B00876266 /* Assets.xcassets */,
+				B2E8F98D2345BD4B00876266 /* LaunchScreen.storyboard */,
+				B2E8F9902345BD4B00876266 /* Info.plist */,
+				B2E8F9C62348F41000876266 /* GoogleService-Info.plist */,
+			);
+			path = wakeapp;
+			sourceTree = "<group>";
+		};
+		B2E8F9982345BD4B00876266 /* wakeappTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2E8F9992345BD4B00876266 /* wakeappTests.swift */,
+				B2E8F99B2345BD4B00876266 /* Info.plist */,
+			);
+			path = wakeappTests;
+			sourceTree = "<group>";
+		};
+		B2E8F9A32345BD4C00876266 /* wakeappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B2E8F9A42345BD4C00876266 /* wakeappUITests.swift */,
+				B2E8F9A62345BD4C00876266 /* Info.plist */,
+			);
+			path = wakeappUITests;
+			sourceTree = "<group>";
+		};
+		B2E8F9B22345C3F300876266 /* ####### VIEWMODAL # */ = {
+			isa = PBXGroup;
+			children = (
+				B2620241236C67120042CDC1 /* ContactsTableViewModal.swift */,
+				B2E8F9C02348618800876266 /* LoginVCViewModal.swift */,
+				B25F0487235AE60300B82076 /* MessagesViewModal.swift */,
+				B2213FB023D02490003D0017 /* ChatLLogViewModal.swift */,
+			);
+			path = "####### VIEWMODAL #";
+			sourceTree = "<group>";
+		};
+		B2E8F9B32345C41500876266 /* ####### MODAL ##### */ = {
+			isa = PBXGroup;
+			children = (
+				B2E8FA08234A954A00876266 /* User.swift */,
+				B2E1E3572387AF91007DF696 /* UserInput.swift */,
+				B2213FB223D0271D003D0017 /* Message.swift */,
+			);
+			path = "####### MODAL #####";
+			sourceTree = "<group>";
+		};
+		B2E8F9B42345C41D00876266 /* ####### VIEW ####### */ = {
+			isa = PBXGroup;
+			children = (
+				B2620243236C69920042CDC1 /* tableviewcell */,
+				B2620240236C66AC0042CDC1 /* tableview */,
+				B2E8F9862345BD4900876266 /* MessagesViewController.swift */,
+				B2E8F9B52345C43900876266 /* LoginViewController.swift */,
+				B25F048B236287EF00B82076 /* TestVC.swift */,
+				B262023C236BA6340042CDC1 /* NewMessageViewController.swift */,
+				B246037523AD9B14004885E1 /* ChatLogController.swift */,
+			);
+			path = "####### VIEW #######";
+			sourceTree = "<group>";
+		};
+		B2E8F9B92347044100876266 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B2E8F9BA2347046700876266 /* UIColor+extension.swift */,
+				B2E8F9C2234863C900876266 /* UIAlertController+extension.swift */,
+				B2E8F9C42348799100876266 /* Notification.Name+extension.swift */,
+				B2394415238058EA00F22535 /* LoginViewController+UIPickerVC.swift */,
+				B246037323AA6D52004885E1 /* UIImageView+extension.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		B2E8FA0A234AA73600876266 /* operations */ = {
+			isa = PBXGroup;
+			children = (
+				B2213FB423D02A0E003D0017 /* message */,
+				B2E1E35C2388BA0E007DF696 /* login */,
+				B2E1E35B2388B9DD007DF696 /* registration */,
+				B2E1E35A2388B9C2007DF696 /* Adapters */,
+				B2E1E3592388B97F007DF696 /* multiThreading */,
+			);
+			path = operations;
+			sourceTree = "<group>";
+		};
+		F3F52DC11B5D61240F5D20B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				732499E3F41703C437291B8A /* Pods-wakeapp.debug.xcconfig */,
+				2620144388DAA6C99AB6C07F /* Pods-wakeapp.release.xcconfig */,
+				03B0CF7EF18B6DABD7DE886B /* Pods-wakeapp-wakeappUITests.debug.xcconfig */,
+				9AF45E018567086C3CDCC54D /* Pods-wakeapp-wakeappUITests.release.xcconfig */,
+				CE8091607BBDAFCFF0A08651 /* Pods-wakeappTests.debug.xcconfig */,
+				E2D33F4B27204FDDE47F0007 /* Pods-wakeappTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2E8F97E2345BD4800876266 /* wakeapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2E8F9A92345BD4C00876266 /* Build configuration list for PBXNativeTarget "wakeapp" */;
+			buildPhases = (
+				4AB8CB12D106DE6C8E976275 /* [CP] Check Pods Manifest.lock */,
+				B2E8F97B2345BD4800876266 /* Sources */,
+				B2E8F97C2345BD4800876266 /* Frameworks */,
+				B2E8F97D2345BD4800876266 /* Resources */,
+				D638F04A7EFB181233D37449 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wakeapp;
+			productName = wakeapp;
+			productReference = B2E8F97F2345BD4800876266 /* wakeapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B2E8F9942345BD4B00876266 /* wakeappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2E8F9AC2345BD4C00876266 /* Build configuration list for PBXNativeTarget "wakeappTests" */;
+			buildPhases = (
+				1A871503F8226A4631C1057E /* [CP] Check Pods Manifest.lock */,
+				B2E8F9912345BD4B00876266 /* Sources */,
+				B2E8F9922345BD4B00876266 /* Frameworks */,
+				B2E8F9932345BD4B00876266 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2E8F9972345BD4B00876266 /* PBXTargetDependency */,
+			);
+			name = wakeappTests;
+			productName = wakeappTests;
+			productReference = B2E8F9952345BD4B00876266 /* wakeappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B2E8F99F2345BD4C00876266 /* wakeappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2E8F9AF2345BD4C00876266 /* Build configuration list for PBXNativeTarget "wakeappUITests" */;
+			buildPhases = (
+				4C58A56B081A0F231A993E55 /* [CP] Check Pods Manifest.lock */,
+				B2E8F99C2345BD4C00876266 /* Sources */,
+				B2E8F99D2345BD4C00876266 /* Frameworks */,
+				B2E8F99E2345BD4C00876266 /* Resources */,
+				54613276BB030B0E9411C16A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2E8F9A22345BD4C00876266 /* PBXTargetDependency */,
+			);
+			name = wakeappUITests;
+			productName = wakeappUITests;
+			productReference = B2E8F9A02345BD4C00876266 /* wakeappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2E8F9772345BD4800876266 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Naga Murala";
+				TargetAttributes = {
+					B2E8F97E2345BD4800876266 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					B2E8F9942345BD4B00876266 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = B2E8F97E2345BD4800876266;
+					};
+					B2E8F99F2345BD4C00876266 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = B2E8F97E2345BD4800876266;
+					};
+				};
+			};
+			buildConfigurationList = B2E8F97A2345BD4800876266 /* Build configuration list for PBXProject "wakeapp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2E8F9762345BD4800876266;
+			productRefGroup = B2E8F9802345BD4800876266 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2E8F97E2345BD4800876266 /* wakeapp */,
+				B2E8F9942345BD4B00876266 /* wakeappTests */,
+				B2E8F99F2345BD4C00876266 /* wakeappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2E8F97D2345BD4800876266 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2E8F98F2345BD4B00876266 /* LaunchScreen.storyboard in Resources */,
+				B2E8F9C72348F41000876266 /* GoogleService-Info.plist in Resources */,
+				B2E8F9B82345C95400876266 /* main.storyboard in Resources */,
+				B2E8F98C2345BD4B00876266 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2E8F9932345BD4B00876266 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2E8F99E2345BD4C00876266 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A871503F8226A4631C1057E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wakeappTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AB8CB12D106DE6C8E976275 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wakeapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C58A56B081A0F231A993E55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wakeapp-wakeappUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54613276BB030B0E9411C16A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wakeapp-wakeappUITests/Pods-wakeapp-wakeappUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wakeapp-wakeappUITests/Pods-wakeapp-wakeappUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wakeapp-wakeappUITests/Pods-wakeapp-wakeappUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D638F04A7EFB181233D37449 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wakeapp/Pods-wakeapp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wakeapp/Pods-wakeapp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wakeapp/Pods-wakeapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2E8F97B2345BD4800876266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B246037623AD9B14004885E1 /* ChatLogController.swift in Sources */,
+				B2620245236C69A80042CDC1 /* ContactsTableViewCell.swift in Sources */,
+				B2E8F9B62345C43900876266 /* LoginViewController.swift in Sources */,
+				B2E8F9C3234863C900876266 /* UIAlertController+extension.swift in Sources */,
+				B2213FB323D0271D003D0017 /* Message.swift in Sources */,
+				B2394416238058EA00F22535 /* LoginViewController+UIPickerVC.swift in Sources */,
+				B2E8F9C12348618800876266 /* LoginVCViewModal.swift in Sources */,
+				B25F047F234EFDF500B82076 /* PersistUserInfoOperation.swift in Sources */,
+				B246037423AA6D52004885E1 /* UIImageView+extension.swift in Sources */,
+				B262023F236C66A60042CDC1 /* ContactsTableView.swift in Sources */,
+				B2620242236C67120042CDC1 /* ContactsTableViewModal.swift in Sources */,
+				B2E8F9872345BD4900876266 /* MessagesViewController.swift in Sources */,
+				B262023D236BA6340042CDC1 /* NewMessageViewController.swift in Sources */,
+				B25F04832354121500B82076 /* WakeAppException.swift in Sources */,
+				B2E1E3562387AB59007DF696 /* ProfileImageStorageOperation.swift in Sources */,
+				B2E8F9BB2347046700876266 /* UIColor+extension.swift in Sources */,
+				B25F048A236013D700B82076 /* LoginUserOperation.swift in Sources */,
+				B2E8FA09234A954A00876266 /* User.swift in Sources */,
+				B25F048123524E5700B82076 /* AdapterOperation.swift in Sources */,
+				B25F0488235AE60300B82076 /* MessagesViewModal.swift in Sources */,
+				B2213FB623D02A3E003D0017 /* ChatLogOperation.swift in Sources */,
+				B2E8F9832345BD4900876266 /* AppDelegate.swift in Sources */,
+				B2E8FA0C234AA7AF00876266 /* UserRegistrationOperation.swift in Sources */,
+				B2E8F9C52348799100876266 /* Notification.Name+extension.swift in Sources */,
+				B2E8F9852345BD4900876266 /* SceneDelegate.swift in Sources */,
+				B2E1E3582387AF91007DF696 /* UserInput.swift in Sources */,
+				B2213FB123D02490003D0017 /* ChatLLogViewModal.swift in Sources */,
+				B25F047D234DA2C200B82076 /* AsynchronousOperation.swift in Sources */,
+				B25F048C236287F000B82076 /* TestVC.swift in Sources */,
+				B25F04862356D04A00B82076 /* UserRegistrationDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2E8F9912345BD4B00876266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2E8F99A2345BD4B00876266 /* wakeappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2E8F99C2345BD4C00876266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2E8F9A52345BD4C00876266 /* wakeappUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2E8F9972345BD4B00876266 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2E8F97E2345BD4800876266 /* wakeapp */;
+			targetProxy = B2E8F9962345BD4B00876266 /* PBXContainerItemProxy */;
+		};
+		B2E8F9A22345BD4C00876266 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2E8F97E2345BD4800876266 /* wakeapp */;
+			targetProxy = B2E8F9A12345BD4C00876266 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B2E8F98D2345BD4B00876266 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2E8F98E2345BD4B00876266 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2E8F9A72345BD4C00876266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B2E8F9A82345BD4C00876266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2E8F9AA2345BD4C00876266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 732499E3F41703C437291B8A /* Pods-wakeapp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49CHWC455N;
+				INFOPLIST_FILE = wakeapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thejajay.wakeapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B2E8F9AB2345BD4C00876266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2620144388DAA6C99AB6C07F /* Pods-wakeapp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49CHWC455N;
+				INFOPLIST_FILE = wakeapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thejajay.wakeapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B2E8F9AD2345BD4C00876266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE8091607BBDAFCFF0A08651 /* Pods-wakeappTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49CHWC455N;
+				INFOPLIST_FILE = wakeappTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thejajay.wakeappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wakeapp.app/wakeapp";
+			};
+			name = Debug;
+		};
+		B2E8F9AE2345BD4C00876266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2D33F4B27204FDDE47F0007 /* Pods-wakeappTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49CHWC455N;
+				INFOPLIST_FILE = wakeappTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thejajay.wakeappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wakeapp.app/wakeapp";
+			};
+			name = Release;
+		};
+		B2E8F9B02345BD4C00876266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03B0CF7EF18B6DABD7DE886B /* Pods-wakeapp-wakeappUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49CHWC455N;
+				INFOPLIST_FILE = wakeappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thejajay.wakeappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wakeapp;
+			};
+			name = Debug;
+		};
+		B2E8F9B12345BD4C00876266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AF45E018567086C3CDCC54D /* Pods-wakeapp-wakeappUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49CHWC455N;
+				INFOPLIST_FILE = wakeappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thejajay.wakeappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = wakeapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2E8F97A2345BD4800876266 /* Build configuration list for PBXProject "wakeapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2E8F9A72345BD4C00876266 /* Debug */,
+				B2E8F9A82345BD4C00876266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2E8F9A92345BD4C00876266 /* Build configuration list for PBXNativeTarget "wakeapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2E8F9AA2345BD4C00876266 /* Debug */,
+				B2E8F9AB2345BD4C00876266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2E8F9AC2345BD4C00876266 /* Build configuration list for PBXNativeTarget "wakeappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2E8F9AD2345BD4C00876266 /* Debug */,
+				B2E8F9AE2345BD4C00876266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2E8F9AF2345BD4C00876266 /* Build configuration list for PBXNativeTarget "wakeappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2E8F9B02345BD4C00876266 /* Debug */,
+				B2E8F9B12345BD4C00876266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2E8F9772345BD4800876266 /* Project object */;
+}

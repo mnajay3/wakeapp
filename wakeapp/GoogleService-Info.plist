@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>358071139128-3nkh4lilv5ap3ni8l2r9pojjn8s5buai.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.358071139128-3nkh4lilv5ap3ni8l2r9pojjn8s5buai</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAOyxu6KVOZHu0NG2u13Nzn6ASKuGdQEsM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>358071139128</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.thejajay.wakeapp</string>
+	<key>PROJECT_ID</key>
+	<string>wakeapp-b254d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wakeapp-b254d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:358071139128:ios:0b3772c08d5ddcf3205fcd</string>
+	<key>DATABASE_URL</key>
+	<string>https://wakeapp-b254d.firebaseio.com</string>
+</dict>
+</plist>
