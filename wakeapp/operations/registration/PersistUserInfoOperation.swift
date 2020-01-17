@@ -52,7 +52,7 @@ class PersistUserInfoOperation: AsynchronousOperation {
             self.finish()
             return
         }
-        dbRef.child("users").child(uid).updateChildValues(self.persistRecord.userDict){
+        dbRef.child("contacts").child("users").child(uid).updateChildValues(self.persistRecord.userDict){
            [unowned self] (error, ref) in
             defer
             {

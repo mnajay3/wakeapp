@@ -30,7 +30,7 @@ class NewMessageViewController: UIViewController {
                 self?.contactsTableView.reloadData()
             }
         }.catch { (error) in
-            print("Hi Ajay: Error is: ", error)
+            self.showAlert(withTitle: "Contacts Error!", andMessage: error.localizedDescription)
         }
     }
     

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5F4BA825625F8F9CDF3912AF /* Pods_wakeapp_wakeappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8408EF5849C049C2BB3471F /* Pods_wakeapp_wakeappUITests.framework */; };
 		958D47810694207A0B72ACAB /* Pods_wakeappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AD4F8152B4A4510C1C1616 /* Pods_wakeappTests.framework */; };
+		B20C369723D17FE6007C55A7 /* ContactsFetchOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20C369623D17FE6007C55A7 /* ContactsFetchOperation.swift */; };
 		B2213FB123D02490003D0017 /* ChatLLogViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2213FB023D02490003D0017 /* ChatLLogViewModal.swift */; };
 		B2213FB323D0271D003D0017 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2213FB223D0271D003D0017 /* Message.swift */; };
 		B2213FB623D02A3E003D0017 /* ChatLogOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2213FB523D02A3E003D0017 /* ChatLogOperation.swift */; };
@@ -71,6 +72,7 @@
 		732499E3F41703C437291B8A /* Pods-wakeapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wakeapp.debug.xcconfig"; path = "Target Support Files/Pods-wakeapp/Pods-wakeapp.debug.xcconfig"; sourceTree = "<group>"; };
 		9AF45E018567086C3CDCC54D /* Pods-wakeapp-wakeappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wakeapp-wakeappUITests.release.xcconfig"; path = "Target Support Files/Pods-wakeapp-wakeappUITests/Pods-wakeapp-wakeappUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A8408EF5849C049C2BB3471F /* Pods_wakeapp_wakeappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wakeapp_wakeappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20C369623D17FE6007C55A7 /* ContactsFetchOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFetchOperation.swift; sourceTree = "<group>"; };
 		B2213FB023D02490003D0017 /* ChatLLogViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLLogViewModal.swift; sourceTree = "<group>"; };
 		B2213FB223D0271D003D0017 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		B2213FB523D02A3E003D0017 /* ChatLogOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogOperation.swift; sourceTree = "<group>"; };
@@ -157,12 +159,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B2213FB423D02A0E003D0017 /* message */ = {
+		B2213FB423D02A0E003D0017 /* chatOperation */ = {
 			isa = PBXGroup;
 			children = (
 				B2213FB523D02A3E003D0017 /* ChatLogOperation.swift */,
+				B20C369623D17FE6007C55A7 /* ContactsFetchOperation.swift */,
 			);
-			path = message;
+			path = chatOperation;
 			sourceTree = "<group>";
 		};
 		B25F04842356CFD200B82076 /* delegates */ = {
@@ -342,7 +345,7 @@
 		B2E8FA0A234AA73600876266 /* operations */ = {
 			isa = PBXGroup;
 			children = (
-				B2213FB423D02A0E003D0017 /* message */,
+				B2213FB423D02A0E003D0017 /* chatOperation */,
 				B2E1E35C2388BA0E007DF696 /* login */,
 				B2E1E35B2388B9DD007DF696 /* registration */,
 				B2E1E35A2388B9C2007DF696 /* Adapters */,
@@ -623,6 +626,7 @@
 				B25F048A236013D700B82076 /* LoginUserOperation.swift in Sources */,
 				B2E8FA09234A954A00876266 /* User.swift in Sources */,
 				B25F048123524E5700B82076 /* AdapterOperation.swift in Sources */,
+				B20C369723D17FE6007C55A7 /* ContactsFetchOperation.swift in Sources */,
 				B25F0488235AE60300B82076 /* MessagesViewModal.swift in Sources */,
 				B2213FB623D02A3E003D0017 /* ChatLogOperation.swift in Sources */,
 				B2E8F9832345BD4900876266 /* AppDelegate.swift in Sources */,

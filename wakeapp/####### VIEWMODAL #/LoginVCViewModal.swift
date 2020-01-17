@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Firebase
 import PromiseKit
 
 enum RegistrationInputs: String {

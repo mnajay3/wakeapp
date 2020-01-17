@@ -14,6 +14,7 @@ import PromiseKit
 public enum UserError: Error {
     case invalidUserSnapShot
     case inputValuesAreEmpty
+    case contactsEmpty
 }
 
 class MessagesViewModal: NSObject {
@@ -52,7 +53,7 @@ class MessagesViewModal: NSObject {
             }
             let uid = Auth.auth().currentUser?.uid
             //Move this database call to the background thread
-            Database.database().reference().child("users").child(uid!).observeSingleEvent(of: .value, with: {
+            Database.database().reference().child("contacts").child("users").child(uid!).observeSingleEvent(of: .value, with: {
                 [unowned self] snapshot in
                 guard let userDict = snapshot.value as? [String: AnyObject] else {
                     seal.reject(UserError.invalidUserSnapShot)
