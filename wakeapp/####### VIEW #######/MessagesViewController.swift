@@ -60,8 +60,8 @@ class MessagesViewController: UITableViewController {
         let label = UILabel(frame: CGRect(x: 45, y: -25, width: titleView.bounds.width, height: 100))
         label.text = user.userName
         titleView.addSubview(label)
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(launchChatLog))
-        titleView.addGestureRecognizer(tapGesture)
+//        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(launchChatLog))
+//        titleView.addGestureRecognizer(tapGesture)
         self.navigationItem.titleView = titleView
     }
     
@@ -82,9 +82,11 @@ class MessagesViewController: UITableViewController {
         //MARK:- Class methods
         /// Display Login/Signup Page after succesful login
         let mainStoryBoard = UIStoryboard(name: "main", bundle: nil)
-        let newMessageViewController : NewMessageViewController = mainStoryBoard.instantiateViewController(withIdentifier: "newMessageSB") as! NewMessageViewController
-        self.navigationController?.pushViewController(newMessageViewController, animated: true)
-        //        self.navigationController?.present(newMessageViewController, animated: true, completion: nil)
+        let contactsViewController : ContactsViewController = mainStoryBoard.instantiateViewController(withIdentifier: "newMessageSB") as! ContactsViewController
+        contactsViewController.modalPresentationStyle = .formSheet
+        ///Set the delegate to launch chat logview controller on contact selection
+        contactsViewController.messageVC = self
+        self.present(contactsViewController, animated: true, completion: nil)
         
     }
     
@@ -100,10 +102,12 @@ class MessagesViewController: UITableViewController {
     }
     
     //MARK:- LAUNCH CHAT LOG CONTROLER
-    @objc func launchChatLog() {
+    func launchChatLog(toUser: User?) {
         let mainStoryBoard = UIStoryboard(name: "main", bundle: nil)
         let chatLogVC : ChatLogController = mainStoryBoard.instantiateViewController(withIdentifier: "chatLogVC") as! ChatLogController
         chatLogVC.modalPresentationStyle = .fullScreen
+        chatLogVC.navigationItem.title = toUser?.userName ?? ""
+        chatLogVC.chatLogViewModal.toUser = toUser
         
         
         self.navigationController?.pushViewController(chatLogVC,animated: true)

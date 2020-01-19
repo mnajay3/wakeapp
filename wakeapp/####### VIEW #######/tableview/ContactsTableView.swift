@@ -10,7 +10,7 @@ import UIKit
 import Foundation
 
 class ContactsTableView: UITableView, UITableViewDelegate, UITableViewDataSource {
-    weak var parentDelegate: NewMessageViewController?
+    weak var parentDelegate: ContactsViewController?
     var contacts: [User]?
     let cellIdentifier = "contactsViewCell"
     
@@ -49,7 +49,8 @@ class ContactsTableView: UITableView, UITableViewDelegate, UITableViewDataSource
     
     //MARK:- TableView DELEGATE methods
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.parentDelegate?.itemSelected()
+        guard let var1 = self.contacts, !var1.isEmpty else { return }
+        self.parentDelegate?.itemSelected(toUser: var1[indexPath.row])
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

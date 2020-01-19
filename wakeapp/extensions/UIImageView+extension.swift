@@ -15,13 +15,14 @@ extension UIImageView {
             self.image = cachedImage as UIImage
             return
         }
-        let url = URL(string: urlStr)
-        URLSession.shared.dataTask(with: url!) { (data, response, error) in
-            let downloadedImage =  UIImage(data: data!)
-            cache.setObject(downloadedImage!, forKey: urlStr as AnyObject)
-            DispatchQueue.main.async { [weak self] in
-                self?.image = downloadedImage
-                self?.setNeedsLayout()
+        guard let url = URL(string: urlStr) else { return }
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if let downloadedImage =  UIImage(data: data!) {
+                cache.setObject(downloadedImage, forKey: urlStr as AnyObject)
+                DispatchQueue.main.async { [weak self] in
+                    self?.image = downloadedImage
+                    self?.setNeedsLayout()
+                }
             }
         }.resume()
     }

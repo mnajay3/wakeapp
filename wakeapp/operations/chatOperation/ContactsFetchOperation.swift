@@ -30,11 +30,17 @@ class ContactsFetchOperation: AsynchronousOperation {
                     self.finish()
                     return
             }
-            for child in contactsDict.values {
-                let user = User(userName: child["username"] as? String ?? "NA", userEmail: child["email"] as? String ?? "NA",
+            print(contactsDict)
+            for (key,child) in contactsDict {
+                let user = User(uid: key,
+                                userName: child["username"] as? String ?? "NA",
+                                userEmail: child["email"] as? String ?? "NA",
                                 encryptedData: "",
                                 profilleImageURL: child["profileImageURL"] as? String ?? nil)
-                if user.userName != "NA" && user.userEmail != "NA" {
+                if  user.userName != "NA"   &&
+                    user.userEmail != "NA"  &&
+                    user.uid != Auth.auth().currentUser?.uid
+                {
                     self.contacts.append(user)
                 }
             }

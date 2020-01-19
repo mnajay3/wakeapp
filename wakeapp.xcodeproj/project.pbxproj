@@ -12,7 +12,7 @@
 		B20C369723D17FE6007C55A7 /* ContactsFetchOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20C369623D17FE6007C55A7 /* ContactsFetchOperation.swift */; };
 		B2213FB123D02490003D0017 /* ChatLLogViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2213FB023D02490003D0017 /* ChatLLogViewModal.swift */; };
 		B2213FB323D0271D003D0017 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2213FB223D0271D003D0017 /* Message.swift */; };
-		B2213FB623D02A3E003D0017 /* ChatLogOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2213FB523D02A3E003D0017 /* ChatLogOperation.swift */; };
+		B2213FB623D02A3E003D0017 /* MessagePersistOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2213FB523D02A3E003D0017 /* MessagePersistOperation.swift */; };
 		B2394416238058EA00F22535 /* LoginViewController+UIPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2394415238058EA00F22535 /* LoginViewController+UIPickerVC.swift */; };
 		B246037423AA6D52004885E1 /* UIImageView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B246037323AA6D52004885E1 /* UIImageView+extension.swift */; };
 		B246037623AD9B14004885E1 /* ChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B246037523AD9B14004885E1 /* ChatLogController.swift */; };
@@ -24,7 +24,7 @@
 		B25F0488235AE60300B82076 /* MessagesViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25F0487235AE60300B82076 /* MessagesViewModal.swift */; };
 		B25F048A236013D700B82076 /* LoginUserOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25F0489236013D700B82076 /* LoginUserOperation.swift */; };
 		B25F048C236287F000B82076 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25F048B236287EF00B82076 /* TestVC.swift */; };
-		B262023D236BA6340042CDC1 /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B262023C236BA6340042CDC1 /* NewMessageViewController.swift */; };
+		B262023D236BA6340042CDC1 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B262023C236BA6340042CDC1 /* ContactsViewController.swift */; };
 		B262023F236C66A60042CDC1 /* ContactsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B262023E236C66A60042CDC1 /* ContactsTableView.swift */; };
 		B2620242236C67120042CDC1 /* ContactsTableViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2620241236C67120042CDC1 /* ContactsTableViewModal.swift */; };
 		B2620245236C69A80042CDC1 /* ContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2620244236C69A80042CDC1 /* ContactsTableViewCell.swift */; };
@@ -75,7 +75,7 @@
 		B20C369623D17FE6007C55A7 /* ContactsFetchOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFetchOperation.swift; sourceTree = "<group>"; };
 		B2213FB023D02490003D0017 /* ChatLLogViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLLogViewModal.swift; sourceTree = "<group>"; };
 		B2213FB223D0271D003D0017 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		B2213FB523D02A3E003D0017 /* ChatLogOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogOperation.swift; sourceTree = "<group>"; };
+		B2213FB523D02A3E003D0017 /* MessagePersistOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePersistOperation.swift; sourceTree = "<group>"; };
 		B2394415238058EA00F22535 /* LoginViewController+UIPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+UIPickerVC.swift"; sourceTree = "<group>"; };
 		B246037323AA6D52004885E1 /* UIImageView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+extension.swift"; sourceTree = "<group>"; };
 		B246037523AD9B14004885E1 /* ChatLogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogController.swift; sourceTree = "<group>"; };
@@ -87,7 +87,7 @@
 		B25F0487235AE60300B82076 /* MessagesViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewModal.swift; sourceTree = "<group>"; };
 		B25F0489236013D700B82076 /* LoginUserOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUserOperation.swift; sourceTree = "<group>"; };
 		B25F048B236287EF00B82076 /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
-		B262023C236BA6340042CDC1 /* NewMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewController.swift; sourceTree = "<group>"; };
+		B262023C236BA6340042CDC1 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		B262023E236C66A60042CDC1 /* ContactsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableView.swift; sourceTree = "<group>"; };
 		B2620241236C67120042CDC1 /* ContactsTableViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewModal.swift; sourceTree = "<group>"; };
 		B2620244236C69A80042CDC1 /* ContactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell.swift; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 		B2213FB423D02A0E003D0017 /* chatOperation */ = {
 			isa = PBXGroup;
 			children = (
-				B2213FB523D02A3E003D0017 /* ChatLogOperation.swift */,
+				B2213FB523D02A3E003D0017 /* MessagePersistOperation.swift */,
 				B20C369623D17FE6007C55A7 /* ContactsFetchOperation.swift */,
 			);
 			path = chatOperation;
@@ -324,7 +324,7 @@
 				B2E8F9862345BD4900876266 /* MessagesViewController.swift */,
 				B2E8F9B52345C43900876266 /* LoginViewController.swift */,
 				B25F048B236287EF00B82076 /* TestVC.swift */,
-				B262023C236BA6340042CDC1 /* NewMessageViewController.swift */,
+				B262023C236BA6340042CDC1 /* ContactsViewController.swift */,
 				B246037523AD9B14004885E1 /* ChatLogController.swift */,
 			);
 			path = "####### VIEW #######";
@@ -619,7 +619,7 @@
 				B262023F236C66A60042CDC1 /* ContactsTableView.swift in Sources */,
 				B2620242236C67120042CDC1 /* ContactsTableViewModal.swift in Sources */,
 				B2E8F9872345BD4900876266 /* MessagesViewController.swift in Sources */,
-				B262023D236BA6340042CDC1 /* NewMessageViewController.swift in Sources */,
+				B262023D236BA6340042CDC1 /* ContactsViewController.swift in Sources */,
 				B25F04832354121500B82076 /* WakeAppException.swift in Sources */,
 				B2E1E3562387AB59007DF696 /* ProfileImageStorageOperation.swift in Sources */,
 				B2E8F9BB2347046700876266 /* UIColor+extension.swift in Sources */,
@@ -628,7 +628,7 @@
 				B25F048123524E5700B82076 /* AdapterOperation.swift in Sources */,
 				B20C369723D17FE6007C55A7 /* ContactsFetchOperation.swift in Sources */,
 				B25F0488235AE60300B82076 /* MessagesViewModal.swift in Sources */,
-				B2213FB623D02A3E003D0017 /* ChatLogOperation.swift in Sources */,
+				B2213FB623D02A3E003D0017 /* MessagePersistOperation.swift in Sources */,
 				B2E8F9832345BD4900876266 /* AppDelegate.swift in Sources */,
 				B2E8FA0C234AA7AF00876266 /* UserRegistrationOperation.swift in Sources */,
 				B2E8F9C52348799100876266 /* Notification.Name+extension.swift in Sources */,

@@ -140,7 +140,7 @@
         <!--Contacts-->
         <scene sceneID="Eei-qe-x45">
             <objects>
-                <viewController storyboardIdentifier="newMessageSB" modalPresentationStyle="fullScreen" id="QLo-oc-vwv" customClass="NewMessageViewController" customModule="wakeapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="newMessageSB" modalPresentationStyle="fullScreen" id="QLo-oc-vwv" customClass="ContactsViewController" customModule="wakeapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X1x-wj-7cX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

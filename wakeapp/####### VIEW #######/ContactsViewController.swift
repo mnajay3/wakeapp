@@ -1,5 +1,5 @@
 //
-//  NewMessageViewController.swift
+//  ContactsViewController.swift
 //  wakeapp
 //
 //  Created by Naga Murala on 10/31/19.
@@ -8,10 +8,12 @@
 
 import UIKit
 
-class NewMessageViewController: UIViewController {
+class ContactsViewController: UIViewController {
     
     @IBOutlet var contactsTableViewModal: ContactsTableViewModal!
     @IBOutlet weak var contactsTableView: ContactsTableView!
+    
+    var messageVC: MessagesViewController?
     //MARK:- LIFE CYCLE METHODS
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,14 +37,16 @@ class NewMessageViewController: UIViewController {
     }
     
     //MARK: TABLEVIEW Transitions
-    func itemSelected() {
-        self.dismiss(animated: true, completion: nil)
+    func itemSelected(toUser: User?) {
+        self.dismiss(animated: true) { [unowned self] in
+            self.messageVC?.launchChatLog(toUser: toUser)
+        }
     }
     
     
     //MARK:- DEINITIALIZATION
     deinit {
-        print("NewMessageViewController is deallocated")
+        print("ContactsViewControlller is deallocated")
     }
     
 }

@@ -9,5 +9,8 @@
 import Foundation
 
 struct Message: Codable {
-    var messageText: String
+    var fromId: String?
+    var toId: String?
+    var timeStamp: Int?
+    var messageText: String?
 }

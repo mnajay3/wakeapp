@@ -8,25 +8,38 @@
 
 import Foundation
 import PromiseKit
+import Firebase
 
 class ChatLogViewModal: NSObject {
     var message: Message?
     
+    var toUser: User? {
+        didSet {
+            let fromId = Auth.auth().currentUser?.uid
+            let timeStamp: Int = Int(NSDate().timeIntervalSince1970)
+            message = Message(fromId: fromId, toId: toUser?.uid, timeStamp: timeStamp, messageText: "")
+        }
+    }
+    
+    
     func loadMessageInFirebase(_ messageText: String) -> Promise<Message> {
         Promise<Message> { seal in
-            self.message = Message(messageText: messageText)
-            
-            let chatLogOperation = ChatLogOperation(message: message!)
-            chatLogOperation.completionBlock = { [unowned self] in
+            self.message?.messageText = messageText
+            guard let message = message else {
+                seal.reject(UserError.inputValuesAreEmpty)
+                return
+            }
+            let messagePersistOperation = MessagePersistOperation(message: message)
+            messagePersistOperation.completionBlock = { [unowned self] in
                 ///Activity after comletion of Operation
-                guard let exception = chatLogOperation.wakeAppException else {
+                guard let exception = messagePersistOperation.wakeAppException else {
                     seal.fulfill(self.message!)
                     return
                 }
                 seal.reject(exception)
             }
             let operationQueue = OperationQueues()
-            operationQueue.userOperationQueue.addOperation(chatLogOperation)
+            operationQueue.userOperationQueue.addOperation(messagePersistOperation)
         }
         
     }

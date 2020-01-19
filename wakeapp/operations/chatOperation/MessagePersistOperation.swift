@@ -1,5 +1,5 @@
 //
-//  ChatLogOperation.swift
+//  MessagePersistOperation.swift
 //  wakeapp
 //
 //  Created by Naga Murala on 1/15/20.
@@ -9,7 +9,7 @@
 import Foundation
 import Firebase
 
-class ChatLogOperation: AsynchronousOperation {
+class MessagePersistOperation: AsynchronousOperation {
     
     var message: Message
     var wakeAppException: WakeAppException?
@@ -29,7 +29,10 @@ class ChatLogOperation: AsynchronousOperation {
         ///Firebase generates a unique ref id
         let childAutoRef = ref.childByAutoId()
         ///Load the message in firebase db
-        childAutoRef.updateChildValues(["text" : message.messageText])
+        childAutoRef.updateChildValues(["fromId" : message.fromId!,
+                                        "toId" : message.toId!,
+                                        "timeStamp" : message.timeStamp!,
+                                        "messageText" : message.messageText!])
         self.finish()
     }
     
