@@ -10,12 +10,15 @@
 		5F4BA825625F8F9CDF3912AF /* Pods_wakeapp_wakeappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8408EF5849C049C2BB3471F /* Pods_wakeapp_wakeappUITests.framework */; };
 		958D47810694207A0B72ACAB /* Pods_wakeappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AD4F8152B4A4510C1C1616 /* Pods_wakeappTests.framework */; };
 		B20C369723D17FE6007C55A7 /* ContactsFetchOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20C369623D17FE6007C55A7 /* ContactsFetchOperation.swift */; };
+		B212655323D3F13100F5A683 /* MessageFetchOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B212655223D3F13100F5A683 /* MessageFetchOperation.swift */; };
 		B2213FB123D02490003D0017 /* ChatLLogViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2213FB023D02490003D0017 /* ChatLLogViewModal.swift */; };
 		B2213FB323D0271D003D0017 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2213FB223D0271D003D0017 /* Message.swift */; };
 		B2213FB623D02A3E003D0017 /* MessagePersistOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2213FB523D02A3E003D0017 /* MessagePersistOperation.swift */; };
 		B2394416238058EA00F22535 /* LoginViewController+UIPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2394415238058EA00F22535 /* LoginViewController+UIPickerVC.swift */; };
 		B246037423AA6D52004885E1 /* UIImageView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B246037323AA6D52004885E1 /* UIImageView+extension.swift */; };
 		B246037623AD9B14004885E1 /* ChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B246037523AD9B14004885E1 /* ChatLogController.swift */; };
+		B25941ED23ED12140047F861 /* ChatLogCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25941EC23ED12140047F861 /* ChatLogCollectionView.swift */; };
+		B25941EF23EDA47F0047F861 /* ChatLogCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25941EE23EDA47F0047F861 /* ChatLogCollectionViewCell.swift */; };
 		B25F047D234DA2C200B82076 /* AsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25F047C234DA2C200B82076 /* AsynchronousOperation.swift */; };
 		B25F047F234EFDF500B82076 /* PersistUserInfoOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25F047E234EFDF500B82076 /* PersistUserInfoOperation.swift */; };
 		B25F048123524E5700B82076 /* AdapterOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25F048023524E5600B82076 /* AdapterOperation.swift */; };
@@ -28,6 +31,7 @@
 		B262023F236C66A60042CDC1 /* ContactsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B262023E236C66A60042CDC1 /* ContactsTableView.swift */; };
 		B2620242236C67120042CDC1 /* ContactsTableViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2620241236C67120042CDC1 /* ContactsTableViewModal.swift */; };
 		B2620245236C69A80042CDC1 /* ContactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2620244236C69A80042CDC1 /* ContactsTableViewCell.swift */; };
+		B2753D6923DAB91C005FA605 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2753D6823DAB91C005FA605 /* MessageTableViewCell.swift */; };
 		B2E1E3562387AB59007DF696 /* ProfileImageStorageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1E3552387AB59007DF696 /* ProfileImageStorageOperation.swift */; };
 		B2E1E3582387AF91007DF696 /* UserInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E1E3572387AF91007DF696 /* UserInput.swift */; };
 		B2E8F9832345BD4900876266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8F9822345BD4900876266 /* AppDelegate.swift */; };
@@ -38,7 +42,7 @@
 		B2E8F99A2345BD4B00876266 /* wakeappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8F9992345BD4B00876266 /* wakeappTests.swift */; };
 		B2E8F9A52345BD4C00876266 /* wakeappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8F9A42345BD4C00876266 /* wakeappUITests.swift */; };
 		B2E8F9B62345C43900876266 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8F9B52345C43900876266 /* LoginViewController.swift */; };
-		B2E8F9B82345C95400876266 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E8F9B72345C95400876266 /* main.storyboard */; };
+		B2E8F9B82345C95400876266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E8F9B72345C95400876266 /* Main.storyboard */; };
 		B2E8F9BB2347046700876266 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8F9BA2347046700876266 /* UIColor+extension.swift */; };
 		B2E8F9C12348618800876266 /* LoginVCViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8F9C02348618800876266 /* LoginVCViewModal.swift */; };
 		B2E8F9C3234863C900876266 /* UIAlertController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E8F9C2234863C900876266 /* UIAlertController+extension.swift */; };
@@ -73,12 +77,15 @@
 		9AF45E018567086C3CDCC54D /* Pods-wakeapp-wakeappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wakeapp-wakeappUITests.release.xcconfig"; path = "Target Support Files/Pods-wakeapp-wakeappUITests/Pods-wakeapp-wakeappUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A8408EF5849C049C2BB3471F /* Pods_wakeapp_wakeappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wakeapp_wakeappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20C369623D17FE6007C55A7 /* ContactsFetchOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFetchOperation.swift; sourceTree = "<group>"; };
+		B212655223D3F13100F5A683 /* MessageFetchOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFetchOperation.swift; sourceTree = "<group>"; };
 		B2213FB023D02490003D0017 /* ChatLLogViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLLogViewModal.swift; sourceTree = "<group>"; };
 		B2213FB223D0271D003D0017 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		B2213FB523D02A3E003D0017 /* MessagePersistOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePersistOperation.swift; sourceTree = "<group>"; };
 		B2394415238058EA00F22535 /* LoginViewController+UIPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+UIPickerVC.swift"; sourceTree = "<group>"; };
 		B246037323AA6D52004885E1 /* UIImageView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+extension.swift"; sourceTree = "<group>"; };
 		B246037523AD9B14004885E1 /* ChatLogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogController.swift; sourceTree = "<group>"; };
+		B25941EC23ED12140047F861 /* ChatLogCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogCollectionView.swift; sourceTree = "<group>"; };
+		B25941EE23EDA47F0047F861 /* ChatLogCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogCollectionViewCell.swift; sourceTree = "<group>"; };
 		B25F047C234DA2C200B82076 /* AsynchronousOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousOperation.swift; sourceTree = "<group>"; };
 		B25F047E234EFDF500B82076 /* PersistUserInfoOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistUserInfoOperation.swift; sourceTree = "<group>"; };
 		B25F048023524E5600B82076 /* AdapterOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterOperation.swift; sourceTree = "<group>"; };
@@ -91,6 +98,7 @@
 		B262023E236C66A60042CDC1 /* ContactsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableView.swift; sourceTree = "<group>"; };
 		B2620241236C67120042CDC1 /* ContactsTableViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewModal.swift; sourceTree = "<group>"; };
 		B2620244236C69A80042CDC1 /* ContactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewCell.swift; sourceTree = "<group>"; };
+		B2753D6823DAB91C005FA605 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		B2E1E3552387AB59007DF696 /* ProfileImageStorageOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageStorageOperation.swift; sourceTree = "<group>"; };
 		B2E1E3572387AF91007DF696 /* UserInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInput.swift; sourceTree = "<group>"; };
 		B2E8F97F2345BD4800876266 /* wakeapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wakeapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,7 +115,7 @@
 		B2E8F9A42345BD4C00876266 /* wakeappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wakeappUITests.swift; sourceTree = "<group>"; };
 		B2E8F9A62345BD4C00876266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2E8F9B52345C43900876266 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		B2E8F9B72345C95400876266 /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		B2E8F9B72345C95400876266 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B2E8F9BA2347046700876266 /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
 		B2E8F9C02348618800876266 /* LoginVCViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVCViewModal.swift; sourceTree = "<group>"; };
 		B2E8F9C2234863C900876266 /* UIAlertController+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+extension.swift"; sourceTree = "<group>"; };
@@ -164,6 +172,7 @@
 			children = (
 				B2213FB523D02A3E003D0017 /* MessagePersistOperation.swift */,
 				B20C369623D17FE6007C55A7 /* ContactsFetchOperation.swift */,
+				B212655223D3F13100F5A683 /* MessageFetchOperation.swift */,
 			);
 			path = chatOperation;
 			sourceTree = "<group>";
@@ -180,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				B262023E236C66A60042CDC1 /* ContactsTableView.swift */,
+				B25941EC23ED12140047F861 /* ChatLogCollectionView.swift */,
 			);
 			path = tableview;
 			sourceTree = "<group>";
@@ -188,8 +198,17 @@
 			isa = PBXGroup;
 			children = (
 				B2620244236C69A80042CDC1 /* ContactsTableViewCell.swift */,
+				B2753D6823DAB91C005FA605 /* MessageTableViewCell.swift */,
+				B25941EE23EDA47F0047F861 /* ChatLogCollectionViewCell.swift */,
 			);
 			path = tableviewcell;
+			sourceTree = "<group>";
+		};
+		B2753D6A23E7257B005FA605 /* image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 		B2E1E3592388B97F007DF696 /* multiThreading */ = {
@@ -267,7 +286,7 @@
 				B2E8F9B32345C41500876266 /* ####### MODAL ##### */,
 				B2E8F9B22345C3F300876266 /* ####### VIEWMODAL # */,
 				B2E8F9822345BD4900876266 /* AppDelegate.swift */,
-				B2E8F9B72345C95400876266 /* main.storyboard */,
+				B2E8F9B72345C95400876266 /* Main.storyboard */,
 				B2E8F9842345BD4900876266 /* SceneDelegate.swift */,
 				B2E8F98B2345BD4B00876266 /* Assets.xcassets */,
 				B2E8F98D2345BD4B00876266 /* LaunchScreen.storyboard */,
@@ -345,6 +364,7 @@
 		B2E8FA0A234AA73600876266 /* operations */ = {
 			isa = PBXGroup;
 			children = (
+				B2753D6A23E7257B005FA605 /* image */,
 				B2213FB423D02A0E003D0017 /* chatOperation */,
 				B2E1E35C2388BA0E007DF696 /* login */,
 				B2E1E35B2388B9DD007DF696 /* registration */,
@@ -478,7 +498,7 @@
 			files = (
 				B2E8F98F2345BD4B00876266 /* LaunchScreen.storyboard in Resources */,
 				B2E8F9C72348F41000876266 /* GoogleService-Info.plist in Resources */,
-				B2E8F9B82345C95400876266 /* main.storyboard in Resources */,
+				B2E8F9B82345C95400876266 /* Main.storyboard in Resources */,
 				B2E8F98C2345BD4B00876266 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -629,11 +649,15 @@
 				B20C369723D17FE6007C55A7 /* ContactsFetchOperation.swift in Sources */,
 				B25F0488235AE60300B82076 /* MessagesViewModal.swift in Sources */,
 				B2213FB623D02A3E003D0017 /* MessagePersistOperation.swift in Sources */,
+				B212655323D3F13100F5A683 /* MessageFetchOperation.swift in Sources */,
 				B2E8F9832345BD4900876266 /* AppDelegate.swift in Sources */,
 				B2E8FA0C234AA7AF00876266 /* UserRegistrationOperation.swift in Sources */,
 				B2E8F9C52348799100876266 /* Notification.Name+extension.swift in Sources */,
+				B2753D6923DAB91C005FA605 /* MessageTableViewCell.swift in Sources */,
 				B2E8F9852345BD4900876266 /* SceneDelegate.swift in Sources */,
 				B2E1E3582387AF91007DF696 /* UserInput.swift in Sources */,
+				B25941ED23ED12140047F861 /* ChatLogCollectionView.swift in Sources */,
+				B25941EF23EDA47F0047F861 /* ChatLogCollectionViewCell.swift in Sources */,
 				B2213FB123D02490003D0017 /* ChatLLogViewModal.swift in Sources */,
 				B25F047D234DA2C200B82076 /* AsynchronousOperation.swift in Sources */,
 				B25F048C236287F000B82076 /* TestVC.swift in Sources */,
@@ -803,6 +827,7 @@
 			baseConfigurationReference = 732499E3F41703C437291B8A /* Pods-wakeapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49CHWC455N;
 				INFOPLIST_FILE = wakeapp/Info.plist;
@@ -812,6 +837,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thejajay.wakeapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -822,6 +848,7 @@
 			baseConfigurationReference = 2620144388DAA6C99AB6C07F /* Pods-wakeapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49CHWC455N;
 				INFOPLIST_FILE = wakeapp/Info.plist;
@@ -831,6 +858,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.thejajay.wakeapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -65,7 +65,7 @@ class LoginVCViewModal: NSObject{
         }
         //NSOperation queues
         let operationQueues = OperationQueues()
-        operationQueues.userOperationQueue.addOperation(adapterOperation)
+        operationQueues.queue.addOperation(adapterOperation)
     }
     
     //MARK:- SINGIN USER
@@ -104,7 +104,7 @@ class LoginVCViewModal: NSObject{
             }
             ///NSOperation queues
             let operationQueue = OperationQueues()
-            operationQueue.userOperationQueue.addOperation(loginUserOperation)
+            operationQueue.queue.addOperation(loginUserOperation)
         }
     }
 }

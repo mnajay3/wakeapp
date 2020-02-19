@@ -23,7 +23,7 @@ class ContactsTableViewModal: NSObject {
                 seal.fulfill(self.contacts)
             }
             let operationQueue = OperationQueues()
-            operationQueue.userOperationQueue.addOperation(contactFetchOperation)
+            operationQueue.queue.addOperation(contactFetchOperation)
         }
         
     }

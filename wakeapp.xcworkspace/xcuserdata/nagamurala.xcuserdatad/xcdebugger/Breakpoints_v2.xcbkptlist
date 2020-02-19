@@ -66,5 +66,147 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "03C733C0-1D17-4B0F-ADA0-E905F64504CE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wakeapp/####### VIEW #######/ViewControlller.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BF86F284-D5FC-4749-9BB4-470237333FC9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wakeapp/operations/chatOperation/MessagePersistOperation.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "main()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0CFC1429-5C84-4323-B3FC-E52D389947D7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wakeapp/####### VIEW #######/MessagesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
+            landmarkName = "fetchMessages()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EB7B3F40-E0CC-439F-817C-5A04608C6E09"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wakeapp/####### VIEW #######/MessagesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
+            landmarkName = "fetchMessages()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EB7B3F40-E0CC-439F-817C-5A04608C6E09 - 6521bddb8764cb95"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[3] = [Closure Propagated : function signature specialization &lt;Arg[2] = [Constant Propagated Function : closure #1 (wakeapp.Message, wakeapp.Message) -&gt; Swift.Bool in closure #1 (wakeapp.Message) -&gt; () in wakeapp.MessagesViewController.fetchMessages() -&gt; ()]&gt; of reabstraction thunk helper from @callee_guaranteed (@guaranteed wakeapp.Message, @guaranteed wakeapp.Message) -&gt; (@unowned Swift.Bool, @error @owned Swift.Error) to @escaping @callee_guaranteed (@in_guaranteed wakeapp.Message, @in_guaranteed wakeapp.Message) -&gt; (@unowned Swift.Bool, @error @owned Swift.Error), Argument Types : []&gt; of generic specialization &lt;wakeapp.Message&gt; of closure #1 (inout Swift.UnsafeMutableBufferPointer&lt;A&gt;, inout Swift.Int) throws -&gt; () in Swift.UnsafeMutableBufferPointer._stableSortImpl(by: (A, A) throws -&gt; Swift.Bool) throws -&gt; ()"
+                  moduleName = "wakeapp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nagamurala/Desktop/WorkSpace/wakeapp/wakeapp/%23%23%23%23%23%23%23%20VIEW%20%23%23%23%23%23%23%23/MessagesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "162"
+                  endingLineNumber = "162"
+                  offsetFromSymbolStart = "225">
+               </Location>
+               <Location
+                  uuid = "EB7B3F40-E0CC-439F-817C-5A04608C6E09 - 6521bddb8764cb95"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[3] = [Closure Propagated : function signature specialization &lt;Arg[2] = [Constant Propagated Function : closure #1 (wakeapp.Message, wakeapp.Message) -&gt; Swift.Bool in closure #1 (wakeapp.Message) -&gt; () in wakeapp.MessagesViewController.fetchMessages() -&gt; ()]&gt; of reabstraction thunk helper from @callee_guaranteed (@guaranteed wakeapp.Message, @guaranteed wakeapp.Message) -&gt; (@unowned Swift.Bool, @error @owned Swift.Error) to @escaping @callee_guaranteed (@in_guaranteed wakeapp.Message, @in_guaranteed wakeapp.Message) -&gt; (@unowned Swift.Bool, @error @owned Swift.Error), Argument Types : []&gt; of generic specialization &lt;wakeapp.Message&gt; of closure #1 (inout Swift.UnsafeMutableBufferPointer&lt;A&gt;, inout Swift.Int) throws -&gt; () in Swift.UnsafeMutableBufferPointer._stableSortImpl(by: (A, A) throws -&gt; Swift.Bool) throws -&gt; ()"
+                  moduleName = "wakeapp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nagamurala/Desktop/WorkSpace/wakeapp/wakeapp/%23%23%23%23%23%23%23%20VIEW%20%23%23%23%23%23%23%23/MessagesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "162"
+                  endingLineNumber = "162"
+                  offsetFromSymbolStart = "816">
+               </Location>
+               <Location
+                  uuid = "EB7B3F40-E0CC-439F-817C-5A04608C6E09 - 6e42e2127e483843"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[4] = [Closure Propagated : function signature specialization &lt;Arg[2] = [Constant Propagated Function : closure #1 (wakeapp.Message, wakeapp.Message) -&gt; Swift.Bool in closure #1 (wakeapp.Message) -&gt; () in wakeapp.MessagesViewController.fetchMessages() -&gt; ()]&gt; of reabstraction thunk helper from @callee_guaranteed (@guaranteed wakeapp.Message, @guaranteed wakeapp.Message) -&gt; (@unowned Swift.Bool, @error @owned Swift.Error) to @escaping @callee_guaranteed (@in_guaranteed wakeapp.Message, @in_guaranteed wakeapp.Message) -&gt; (@unowned Swift.Bool, @error @owned Swift.Error), Argument Types : []&gt; of generic specialization &lt;wakeapp.Message&gt; of Swift._merge&lt;A&gt;(low: Swift.UnsafeMutablePointer&lt;A&gt;, mid: Swift.UnsafeMutablePointer&lt;A&gt;, high: Swift.UnsafeMutablePointer&lt;A&gt;, buffer: Swift.UnsafeMutablePointer&lt;A&gt;, by: (A, A) throws -&gt; Swift.Bool) throws -&gt; Swift.Bool"
+                  moduleName = "wakeapp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nagamurala/Desktop/WorkSpace/wakeapp/wakeapp/%23%23%23%23%23%23%23%20VIEW%20%23%23%23%23%23%23%23/MessagesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "162"
+                  endingLineNumber = "162"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "EB7B3F40-E0CC-439F-817C-5A04608C6E09 - 9166d751765e6eb2"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[0] = Exploded&gt; of function signature specialization &lt;Arg[2] = [Closure Propagated : function signature specialization &lt;Arg[2] = [Constant Propagated Function : closure #1 (wakeapp.Message, wakeapp.Message) -&gt; Swift.Bool in closure #1 (wakeapp.Message) -&gt; () in wakeapp.MessagesViewController.fetchMessages() -&gt; ()]&gt; of reabstraction thunk helper from @callee_guaranteed (@guaranteed wakeapp.Message, @guaranteed wakeapp.Message) -&gt; (@unowned Swift.Bool, @error @owned Swift.Error) to @escaping @callee_guaranteed (@in_guaranteed wakeapp.Message, @in_guaranteed wakeapp.Message) -&gt; (@unowned Swift.Bool, @error @owned Swift.Error), Argument Types : []&gt; of generic specialization &lt;Swift.UnsafeMutableBufferPointer&lt;wakeapp.Message&gt;&gt; of (extension in Swift):Swift.MutableCollection&lt; where A: Swift.BidirectionalCollection&gt;._insertionSort(within: Swift.Range&lt;A.Index&gt;, sortedEnd: A.Index, by: (A.Element, A.Element) throws -&gt; Swift.Bool) throws -&gt; ()"
+                  moduleName = "wakeapp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nagamurala/Desktop/WorkSpace/wakeapp/wakeapp/%23%23%23%23%23%23%23%20VIEW%20%23%23%23%23%23%23%23/MessagesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "162"
+                  endingLineNumber = "162"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DF6DF7F7-4FE2-417E-A0E9-5DDA76A39A8C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wakeapp/####### VIEW #######/MessagesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "166"
+            endingLineNumber = "166"
+            landmarkName = "fetchMessages()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

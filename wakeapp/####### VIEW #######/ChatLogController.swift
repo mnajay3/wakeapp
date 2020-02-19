@@ -11,7 +11,7 @@ import PromiseKit
 
 class ChatLogController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var chatLogCollectionView: UICollectionView!
+    @IBOutlet weak var chatLogCollectionView: ChatLogCollectionView!
     @IBOutlet weak var chatLogInputViewContainer: UIView!
     @IBOutlet weak var chatLogInputTextField: UITextField!
     @IBOutlet weak var chatLogInputSendButton: UIButton!
@@ -19,13 +19,15 @@ class ChatLogController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        chatLogCollectionView.chatPartner = chatLogViewModal.toUser
     }
     
     @IBAction func sendMessage(_ sender: Any) {
         firstly{
             self.chatLogViewModal.loadMessageInFirebase(self.chatLogInputTextField.text!)
         }.done {
-            message in
+            [unowned self]message in
+                self.chatLogInputTextField.text = nil
             ///TODO: Future reference
         }.catch {
             error in

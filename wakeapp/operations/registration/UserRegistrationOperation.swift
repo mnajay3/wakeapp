@@ -19,7 +19,7 @@ class RegistrationRecord {
 }
 
 class OperationQueues {
-    lazy var userOperationQueue: OperationQueue = {
+    lazy var queue: OperationQueue = {
         var queue = OperationQueue()
         queue.maxConcurrentOperationCount = 1
         queue.name = "User registration queue"

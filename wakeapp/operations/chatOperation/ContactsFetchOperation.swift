@@ -30,7 +30,6 @@ class ContactsFetchOperation: AsynchronousOperation {
                     self.finish()
                     return
             }
-            print(contactsDict)
             for (key,child) in contactsDict {
                 let user = User(uid: key,
                                 userName: child["username"] as? String ?? "NA",
